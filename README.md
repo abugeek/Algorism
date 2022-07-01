@@ -1,4 +1,4 @@
-# Algomrism
+# Algorism
 
 The handy cheat sheet about Data Structures and Algorithms
 
