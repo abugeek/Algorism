@@ -11,63 +11,58 @@ class NavigationDrawerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(
-      child: Material(
-        child: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color(0xFFFCA91E),
-                Color(0xFFFBC02D),
-                Color(0xFFFFC228),
+    return SafeArea(
+      child: Drawer(
+        child: Material(
+          child: Container(
+            color: Color(0xFFFDF2EC),
+            child: ListView(
+              padding: padding,
+              children: [
+                SizedBox(height: 48.h),
+                Image.asset('assets/images/broughToYouNewBg.png'),
+                SizedBox(height: 24.h),
+                const Divider(
+                  color: Colors.black,
+                ),
+                SizedBox(height: 24.h),
+                builMenuItem(
+                  text: 'GRAPH',
+                  icon: FontAwesomeIcons.circleNodes,
+                  onClick: () => selectedItem(context, 0),
+                ),
+                SizedBox(height: 48.h),
+                builMenuItem(
+                  text: 'SEARCH',
+                  icon: FontAwesomeIcons.search,
+                  onClick: () => selectedItem(context, 0),
+                ),
+                SizedBox(height: 48.h),
+                builMenuItem(
+                  text: 'SORT',
+                  icon: FontAwesomeIcons.sortAlphaAsc,
+                  onClick: () => selectedItem(context, 0),
+                ),
+                SizedBox(height: 48.h),
+                builMenuItem(
+                  text: 'MATHS',
+                  icon: FontAwesomeIcons.plusMinus,
+                  onClick: () => selectedItem(context, 0),
+                ),
+                SizedBox(height: 48.h),
+                builMenuItem(
+                  text: 'DATA STRUCTURES',
+                  icon: FontAwesomeIcons.database,
+                  onClick: () => selectedItem(context, 0),
+                ),
+                SizedBox(height: 48.h),
+                builMenuItem(
+                  text: 'GREEDY',
+                  icon: FontAwesomeIcons.squareShareNodes,
+                  onClick: () => selectedItem(context, 0),
+                ),
               ],
             ),
-          ),
-          child: ListView(
-            padding: padding,
-            children: [
-              SizedBox(height: 48.h),
-              builMenuItem(
-                text: 'GRAPH',
-                icon: FontAwesomeIcons.circleNodes,
-                onClick: () => selectedItem(context, 0),
-              ),
-              SizedBox(height: 48.h),
-              builMenuItem(
-                text: 'SEARCH',
-                icon: FontAwesomeIcons.search,
-                onClick: () => selectedItem(context, 0),
-              ),
-              SizedBox(height: 48.h),
-              builMenuItem(
-                text: 'SORT',
-                icon: FontAwesomeIcons.sortAlphaAsc,
-                onClick: () => selectedItem(context, 0),
-              ),
-              SizedBox(height: 48.h),
-              builMenuItem(
-                text: 'MATHS',
-                icon: FontAwesomeIcons.plusMinus,
-                onClick: () => selectedItem(context, 0),
-              ),
-              SizedBox(height: 48.h),
-              builMenuItem(
-                text: 'DATA STRUCTURES',
-                icon: FontAwesomeIcons.database,
-                onClick: () => selectedItem(context, 0),
-              ),
-              SizedBox(height: 48.h),
-              builMenuItem(
-                text: 'GREEDY',
-                icon: FontAwesomeIcons.squareShareNodes,
-                onClick: () => selectedItem(context, 0),
-              ),
-              SizedBox(height: 24.h),
-              const Divider(
-                color: Colors.black,
-              ),
-              SizedBox(height: 24.h),
-            ],
           ),
         ),
       ),

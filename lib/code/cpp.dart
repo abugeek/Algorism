@@ -144,6 +144,7 @@ int main()
 
 	return 0; 
 } """,
+    "Nearest_Neighbour": """#include<iostream>""",
     "Binary_Search": """#include <iostream>
 using namespace std;
 int binary_search(int a[], int l, int r, int key)

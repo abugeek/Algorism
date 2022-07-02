@@ -1,3 +1,4 @@
+import 'package:Algorism/palette.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_syntax_view/flutter_syntax_view.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -72,9 +73,9 @@ class Code extends StatelessWidget {
         Expanded(
           flex: 2,
           child: Container(
-            color: Colors.amber,
+            color: ThemeData(primarySwatch: Palette.kToDark).primaryColor,
           ),
-        )
+        ),
       ],
     );
   }

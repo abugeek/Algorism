@@ -33,7 +33,7 @@ class _CodeBDState extends State<CodeBD> {
         ),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.content_copy),
+            icon: const Icon(Icons.content_copy),
             onPressed: () {
               Clipboard.setData(ClipboardData(text: CPP.code[widget.title]));
               Fluttertoast.showToast(
@@ -41,7 +41,8 @@ class _CodeBDState extends State<CodeBD> {
             },
           ),
           const BackdropToggleButton(
-            icon: AnimatedIcons.view_list,
+            icon: AnimatedIcons.list_view,
+            color: Colors.black,
           ),
         ],
         headerHeight: 100.h,

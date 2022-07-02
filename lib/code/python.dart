@@ -1,5 +1,6 @@
 class PYTHON {
   static Map code = {
+    "Nearest_Neighbour": """""",
     "Depth_First_Search": """from typing import Set, Dict
 
 

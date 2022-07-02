@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -13,7 +15,6 @@ class ParentCard extends StatefulWidget {
     required this.numbers,
     required this.index,
     required this.leadingIcons,
-    required this.trailingIcons,
     required this.isOpen,
   }) : super(key: key);
 
@@ -22,7 +23,6 @@ class ParentCard extends StatefulWidget {
   final List numbers;
   final int index;
   final List leadingIcons;
-  final List trailingIcons;
   final List isOpen;
   @override
   _ParentCardState createState() => _ParentCardState();
@@ -46,18 +46,15 @@ class _ParentCardState extends State<ParentCard> {
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(24),
-                gradient: const LinearGradient(colors: [
-                  Color(0xFFFCA91E),
-                  Color(0xFFFBC02D),
-                  Color(0xFFFFC228),
-                ]),
-                // boxShadow: [
-                //   BoxShadow(
-                //       color: Color(0x33000000),
-                //       blurRadius: 20,
-                //       offset: Offset(0, 25),
-                //       spreadRadius: -10)
-                // ],
+                gradient: LinearGradient(
+                  transform: const GradientRotation(pi / 2),
+                  colors: [
+                    const Color.fromARGB(255, 64, 58, 62).withOpacity(0.9),
+                    const Color.fromARGB(255, 190, 88, 105).withOpacity(0.9),
+                  ],
+                  begin: Alignment.bottomRight,
+                  end: Alignment.topCenter,
+                ),
               ),
               margin: const EdgeInsets.fromLTRB(19, 10, 19, 6),
               child: Row(
