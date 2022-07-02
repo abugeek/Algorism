@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -16,7 +18,7 @@ class Description extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.only(
+      borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(24), topRight: Radius.circular(24)),
       child: Stack(
         children: <Widget>[
@@ -26,11 +28,15 @@ class Description extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(24),
-                gradient: const LinearGradient(colors: [
-                  Color(0xFFFCA91E),
-                  Color(0xFFFBC02D),
-                  Color(0xFFFFC228),
-                ]),
+                gradient: LinearGradient(
+                  transform: const GradientRotation(pi / 2),
+                  colors: [
+                    const Color.fromARGB(255, 2234, 205, 163).withOpacity(0.9),
+                    const Color.fromARGB(255, 214, 174, 123).withOpacity(0.9),
+                  ],
+                  begin: Alignment.bottomRight,
+                  end: Alignment.topCenter,
+                ),
               ),
               child: SizedBox(
                 height: 1150.h,

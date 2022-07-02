@@ -26,9 +26,9 @@ class _MyAppState extends State<MyApp> {
     "assets/images/graph.png",
     "assets/images/search.png",
     "assets/images/sort.png",
-    "assets/images/plus.png",
+    "assets/images/maths.png",
     "assets/images/data.png",
-    "assets/images/process.png",
+    "assets/images/greedy.png",
   ];
   List listText = [
     "Graph",
@@ -38,16 +38,12 @@ class _MyAppState extends State<MyApp> {
     "Data Structures",
     "Greedy"
   ];
-  List trailingIcons = [
-    "assets/images/Cityscapes Downtown.png",
-    "assets/images/Cityscapes Downtown-1.png",
-    "assets/images/Cityscapes Downtown-2.png",
-    "assets/images/Cityscapes Downtown-3.png",
-    "assets/images/Cityscapes Downtown-4.png",
-    "assets/images/Cityscapes Downtown-5.png",
-  ];
   Map database = {
-    "Graph": ["Depth_First_Search", "Breadth_First_Search"],
+    "Graph": [
+      "Depth_First_Search",
+      "Breadth_First_Search",
+      "Nearest_Neighbour",
+    ],
     "Search": ["Binary_Search", "Linear_Search"],
     "Sort": [
       "Bubble_Sort",
@@ -127,7 +123,7 @@ class _MyAppState extends State<MyApp> {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       body: Container(
-        color: Color(0xFF3F5F9),
+        color: const Color.fromARGB(255, 255, 255, 255),
         child: CustomScrollView(
           slivers: <Widget>[
             SliverAppBar(
@@ -136,32 +132,16 @@ class _MyAppState extends State<MyApp> {
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(24),
                       bottomRight: Radius.circular(24))),
-              backgroundColor: const Color(0xFFFFFFFF),
+              backgroundColor: const Color(0xFFFDF2EC),
               pinned: this._pinned,
               snap: this._snap,
               floating: this._floating,
-              expandedHeight: 475.0.h,
+              expandedHeight: 465.0.h,
               centerTitle: true,
               flexibleSpace: FlexibleSpaceBar(
                 background: Stack(
                   fit: StackFit.expand,
                   children: [
-                    const ClipRRect(
-                      borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(24),
-                      ),
-                      /* child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          SizedBox(
-                            width: 60.w,
-                          ),
-                          /* Image.asset(
-                              "assets/images/appbar.png",
-                            ), */
-                        ],
-                      ), */
-                    ),
                     ClipRRect(
                       borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(16),
@@ -184,7 +164,6 @@ class _MyAppState extends State<MyApp> {
                   return ParentCard(
                       database: database,
                       index: index,
-                      trailingIcons: trailingIcons,
                       listText: listText,
                       isOpen: isOpen,
                       leadingIcons: leadingIcons,

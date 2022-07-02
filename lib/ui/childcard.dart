@@ -36,29 +36,14 @@ class _ChildCardState extends State<ChildCard> {
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(24),
-                    color: Colors.white,
-                    // boxShadow: [
-                    //   BoxShadow(
-                    //       color: Color(0x33000000),
-                    //       blurRadius: 20,
-                    //       offset: Offset(0, 25),
-                    //       spreadRadius: -10)
-                    // ],
+                    color: const Color(0xFFFDF2EC),
                   ),
-                  margin: EdgeInsets.fromLTRB(19, 10, 0, 6),
+                  margin: const EdgeInsets.fromLTRB(19, 10, 0, 6),
                   child: Container(
                     width: 290.w,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(
-                              vertical: 17, horizontal: 14.0),
-                          child: Image.asset(
-                            "assets/images/Big Shoes Happy Costumer-${widget.numbers[index2]}.png",
-                            height: 134.h,
-                          ),
-                        ),
                         Padding(
                           padding: const EdgeInsets.fromLTRB(8.0, 0, 8, 0),
                           child: Text(
