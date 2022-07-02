@@ -71,7 +71,7 @@ class _ParentCardState extends State<ParentCard> {
                     padding: const EdgeInsets.fromLTRB(8.0, 0, 0, 0),
                     child: Text(
                       widget.listText[widget.index],
-                      style: GoogleFonts.bebasNeue(fontSize: 30),
+                      style: GoogleFonts.poppins(fontSize: 30),
                     ),
                   ),
                 ],
