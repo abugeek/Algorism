@@ -2,8 +2,10 @@
 
 The handy cheat sheet about Data Structures and Algorithms
 
-![Screenshot_1656700987](https://user-images.githubusercontent.com/70211629/176953909-c54d8284-5425-47bf-8767-319038e8ed5d.png)![Screenshot_1656701009](https://user-images.githubusercontent.com/70211629/176953937-1b5fc075-7b9a-4c30-b475-edef2aa55abb.png)
-![Screenshot_1656701023](https://user-images.githubusercontent.com/70211629/176953944-c7e6fc4e-ed17-4f08-ae89-5dc0b64eea65.png)![Screenshot_1656701036](https://user-images.githubusercontent.com/70211629/176953957-d6317437-5d57-44cb-a6ed-35ed24293a5e.png)
+![Screenshot_1656768415](https://user-images.githubusercontent.com/70211629/177010463-13116411-d610-4a90-823a-8a27ed136587.png),![Screenshot_1656768446](https://user-images.githubusercontent.com/70211629/177010464-a98d4be6-55ec-4800-9fe6-531304ef8a46.png)
+![Screenshot_1656768454](https://user-images.githubusercontent.com/70211629/177010473-43f5cfaa-7c41-4bc5-b472-1f11e5987d89.png),![Screenshot_1656768459](https://user-images.githubusercontent.com/70211629/177010478-02b8186d-09f7-490a-bbf7-6b5dcdb8d2ad.png)
+
+
 
 
 ## Getting Started
